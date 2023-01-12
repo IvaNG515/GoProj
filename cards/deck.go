@@ -28,3 +28,7 @@ func (d deck) print() {
 		fmt.Println(i, card)
 	}
 }
+
+func (d, deck) toString() string {
+	
+}
