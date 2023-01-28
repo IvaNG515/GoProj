@@ -1,11 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	""
+)
 
-type deck []string
+type full_deck []string
 
-func newDeck() deck {
-	full_deck := deck{}
+func newDeck() full_deck {
+	full_deck := full_deck{}
 	cardNum := []string{"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"}
 	cardColor := []string{"R", "Y", "B", "BL"}
 	cnt := 0
@@ -23,8 +26,12 @@ func newDeck() deck {
 	return full_deck
 }
 
-func (d deck) print() {
+func (d full_deck) print() {
 	for i, card := range d {
 		fmt.Println(i, card)
 	}
+}
+
+func savetofile() {
+
 }
