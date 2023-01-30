@@ -28,6 +28,7 @@ func main() {
             break
         } else if factors > 2 {
             fmt.Println("Not prime")
+            break
         }
         pos_fac += 1
     }
