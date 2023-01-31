@@ -27,7 +27,7 @@ func main() {
             fmt.Println("Is prime")
             break
         } else if factors > 2 {
-            fmt.Println("Not prime")
+            fmt.Println("Not prime, has factor: ", factor_list[1])
             break
         }
         pos_fac += 1
